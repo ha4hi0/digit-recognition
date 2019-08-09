@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    mlp AI(200);
-    AI.read_data("mlp_train.data");
+    mlp AI(300, "mlp_train.data", 0.05);
+    AI.learn();
     return 0;
 }
